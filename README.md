@@ -22,9 +22,13 @@ Extracted Fields
 The following fields are retrieved and stored in a CSV file:
 
 Column Name	Description
+
 PMID	PubMed Identifier
+
 Title	Article title
+
 Pub_year	Year of publication
+
 Abstract	Article abstract text
 
 ## 🧪 Named Entity Recognition with SciSpacy
