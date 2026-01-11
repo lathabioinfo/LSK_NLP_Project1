@@ -40,12 +40,8 @@ abstract = [] #abstract
 
 # now parse the json file and collect information for ALL references in the data:
 for each_publication in data['resultList']['result']:
-    # to verify if you are collecting the right information, use the print command below.
-    #Remove the symbol # and run the script.
-    #It will print on the screen the information for that line
-
+   
     PubMed_Id.append(each_publication.get('id', 'N/A'))
-    #print(each_publication['id'])
     Title.append(each_publication['title'])
     publication_date.append(each_publication['pubYear'])
     abstract.append(html_to_text(each_publication['abstractText']))
@@ -61,7 +57,7 @@ for each_publication in data['resultList']['result']:
 } )
 
 print("Data retrieved on ibuprofen and its adverse effects from Europe PMC:")
-#print(data_ibuprofen_EPMC)
+
 print("Check CSV file in the folder for more detailed information")
 
 data_ibuprofen_EPMC.to_csv("...\DataIbuprofen_EuropePMC.csv", index = False)
@@ -120,6 +116,7 @@ df["adverse_events"] = ae_list
 df.to_csv("drug_ae_extracted.csv", index=False)
 
 print("Extraction complete! Saved to drug_ae_extracted.csv")
+
 
 
 
