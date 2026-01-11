@@ -17,7 +17,7 @@ The pipeline is designed to support pharmacovigilance, literature mining, and bi
 
 Europe PMC REST API
 
-Extracted Fields
+#### Extracted Fields
 
 The following fields are retrieved and stored in a CSV file:
 
