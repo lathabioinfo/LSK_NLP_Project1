@@ -64,7 +64,7 @@ print("Data retrieved on ibuprofen and its adverse effects from Europe PMC:")
 #print(data_ibuprofen_EPMC)
 print("Check CSV file in the folder for more detailed information")
 
-data_ibuprofen_EPMC.to_csv("D:\Latha\project\Jan2026\DataIbuprofen_EuropePMC.csv", index = False)
+data_ibuprofen_EPMC.to_csv("...\DataIbuprofen_EuropePMC.csv", index = False)
 
 #---------------------------------------------------
 #Retrieving drug name and adverse event (disease)
@@ -72,7 +72,7 @@ data_ibuprofen_EPMC.to_csv("D:\Latha\project\Jan2026\DataIbuprofen_EuropePMC.csv
 
 nlp = spacy.load("en_ner_bc5cdr_md")
 
-df = pd.read_csv("D:\Latha\project\Jan2026\DataIbuprofen_EuropePMC.csv")
+df = pd.read_csv("...\DataIbuprofen_EuropePMC.csv")
 
 required_cols = {"PMID", "Title", "Pub_Year", "abstract"}
 if not required_cols.issubset(df.columns):
@@ -120,6 +120,7 @@ df["adverse_events"] = ae_list
 df.to_csv("drug_ae_extracted.csv", index=False)
 
 print("Extraction complete! Saved to drug_ae_extracted.csv")
+
 
 
 
