@@ -1,5 +1,5 @@
-#NLP Pipeline for Drug and Adverse Event Extraction from Europe PMC
-##📌 Project Overview
+# NLP Pipeline for Drug and Adverse Event Extraction from Europe PMC
+## 📌 Project Overview
 
 This project implements an end-to-end Natural Language Processing (NLP) pipeline to:
 
@@ -12,8 +12,8 @@ Apply SciSpacy models to extract drug and adverse event (AE) entities from the a
 Save the extracted entities into a second CSV file for downstream analysis.
 
 The pipeline is designed to support pharmacovigilance, literature mining, and biomedical text analytics.
-##🔍 Data Retrieval from Europe PMC
-###Source
+## 🔍 Data Retrieval from Europe PMC
+### Source
 
 Europe PMC REST API
 
@@ -27,10 +27,10 @@ Title	Article title
 Pub_year	Year of publication
 Abstract	Article abstract text
 
-##🧪 Named Entity Recognition with SciSpacy
-###Objective
+## 🧪 Named Entity Recognition with SciSpacy
+### Objective
 
-Identify and extract:
+#### Identify and extract:
 
 Drugs
 
@@ -38,13 +38,13 @@ Adverse Events (AEs)
 
 from the abstract text.
 
-NLP Tools Used
+#### NLP Tools Used
 
 SciSpacy
 
-Pretrained biomedical NER models (e.g. en_ner_bc5cdr_md, en_core_sci_lg)
+Pretrained biomedical NER models (e.g. en_ner_bc5cdr_md)
 
-Extracted Fields
+##### Extracted Fields
 Column Name	Description
 PMID	PubMed Identifier
 Drug	Identified drug entity
