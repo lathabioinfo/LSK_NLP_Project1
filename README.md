@@ -23,13 +23,13 @@ The following fields are retrieved and stored in a CSV file:
 
 Column Name	Description
 
-PMID	PubMed Identifier
+PMID	- PubMed Identifier
 
-Title	Article title
+Title	- Article title
 
-Pub_year	Year of publication
+Pub_year	- Year of publication
 
-Abstract	Article abstract text
+Abstract	- Article abstract text
 
 ## 🧪 Named Entity Recognition with SciSpacy
 ### Objective
@@ -50,7 +50,11 @@ Pretrained biomedical NER models (e.g. en_ner_bc5cdr_md)
 
 ##### Extracted Fields
 Column Name	Description
-PMID	PubMed Identifier
-Drug	Identified drug entity
-Adverse_Event	Identified adverse event
-Sentence	Source sentence containing the entities
+
+PMID	- PubMed Identifier
+
+Drug	- Identified drug entity
+
+Adverse_Event	- Identified adverse event
+
+Sentence	- Source sentence containing the entities
