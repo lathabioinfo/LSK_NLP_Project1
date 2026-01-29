@@ -1,4 +1,4 @@
-# NLP Pipeline for Drug and Adverse Event Extraction from Europe PMC
+# NLP Pipeline for Drug and Adverse Event Extraction from biomedical abstracts in Europe PMC 
 ## 📌 Project Overview
 
 This project implements an end-to-end Natural Language Processing (NLP) pipeline to:
