@@ -57,4 +57,4 @@ Drug	- Identified drug entity
 
 Adverse_Event	- Identified adverse event
 
-Sentence	- Source sentence containing the entities
+
